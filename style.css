@@ -2,7 +2,7 @@
 
 
 *{
-    border:solid;
+    margin:0px;
 }
 
 .container{
@@ -58,7 +58,21 @@
 .sidebar{
     display:grid;
     grid-row: 1 / 3;
-    background-color: #eab308;
+    background-color:#0369a1;
+    gap:30px;
+    grid-template-rows: 0.75fr 2fr 1fr 3fr;
+    padding:1em;
+    font-size: 25px;
+}
+
+.dashboard{
+    font-size: 40px;
+}
+.dashboard,.sidebarmiddle>*,.sidebarbottom>*
+{
+    display: flex;
+    align-items: center;
+    gap:15px;
 }
 
 .content{
@@ -67,8 +81,9 @@
     grid-column: 2 / 3;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 15px;
-    /*background-color: #65a30d*/
+    gap: 25px;
+    background-color:#fde68a;
+    padding-top: 2em;
 }
 
 .contentprojects{
@@ -77,12 +92,42 @@
     gap:10px;
 }
 
+#yourprojects{
+    font-size:35px;
+    font-weight: bolder;
+    padding-left: 0.5em;
+}
+
 .actualprojects{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap:25px;
   height: 650px;
+  font-size: 20px;
+  color: darkslategrey;
+  padding:1em;
 }
+
+.project1, .project2, .project3,
+.project4, .project5, .project6{
+    border: solid;
+    padding: 1em;
+    background-color: white;
+
+} 
+#projecttext{
+   padding-top: 1em;
+}
+
+#supercoolproject, #lesscoolproject, #impossibleapp, 
+#easypeasyapp, #adblocker, #moneymaker{
+    font-size: 25px;
+    font-weight: bolder;
+    color:black;
+}
+
+
+
 
 .contentannouncements>*{
     height: 100px;
@@ -90,7 +135,17 @@
 
 
 img{
-    height: 25px;
+    height: 35px;
     /* filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(303deg) brightness(105%) contrast(101%); */
     border: none;
+}
+
+#dashboardimg{
+    height:50px;
+}
+
+#projectimg{
+   display: flex;
+   justify-content: end;
+   margin-top:10px;
 }
