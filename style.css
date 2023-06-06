@@ -8,12 +8,14 @@
 .container{
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 0.9fr 4fr;
 }
 
 .header{
     display: grid;
     grid-column: 2 / 3;
+    padding-top: 1.2em;
+    padding-left: 2em;
     
 }
 
@@ -29,17 +31,50 @@
     background-color: rgb(221, 216, 216);
 }
 
+.name{
+    display: flex;
+    gap:30px;
+    align-items: center;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+#usernameavatar{
+    height:50px;
+}
+
 .headerbottom{
     display: grid;
     grid-template-columns: 2fr 2fr 2fr;
 }
 
+.welcome{
+    display: flex;
+}
 
+#welcomewords{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1em;
+}
+#avatarwelcome{
+    font-size: large;
+
+}
+
+#avatarowner
+{
+    font-size: xx-large;
+    font-weight: bolder;
+}
 .sidebuttons{
     display: grid;
     grid-column: 3/4;
     grid-template-columns: 1fr 1fr 1fr;
-
+    display: flex;
+    gap:40px;
+    align-items: center;
 
 }
 
@@ -72,7 +107,8 @@
 {
     display: flex;
     align-items: center;
-    gap:15px;
+    gap:35px;
+    padding-top: 0.25em;
 }
 
 .content{
@@ -80,7 +116,7 @@
     grid-row: 2 / 3;
     grid-column: 2 / 3;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1.2fr 1fr;
     gap: 25px;
     background-color:#fde68a;
     padding-top: 2em;
@@ -100,12 +136,14 @@
 
 .actualprojects{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   gap:25px;
-  height: 650px;
+  height: 640px;
   font-size: 20px;
   color: darkslategrey;
-  padding:1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  
 }
 
 .project1, .project2, .project3,
@@ -116,7 +154,7 @@
 
 } 
 #projecttext{
-   padding-top: 1em;
+   padding-top: 0.5em;
 }
 
 #supercoolproject, #lesscoolproject, #impossibleapp, 
@@ -128,11 +166,87 @@
 
 
 
-
-.contentannouncements>*{
-    height: 100px;
+.contentannouncements{
+    font-size: 35px;
+    font-weight: bolder;
+    padding-right: 1em;
+    
 }
 
+.actualannouncements{
+
+}
+
+#announcementsheading{
+    padding-bottom: 1.3em;
+
+}
+
+
+
+
+.maintenance, .community, .privacypolicy{
+    font-size:20px;
+    font-weight: bolder;
+    height: 90px;
+    background-color: white;
+    padding: 0.1em;
+    padding-left: 0.5em;
+    border: solid;
+
+}
+.maintenance, .community,{
+
+}
+
+#announcementstext{
+    font-size: 15px;
+    padding:0.25em;
+    color: darkslategrey;
+    font-weight: lighter;
+}
+
+.contenttrending{
+    padding-right: 2em;
+
+}
+#trendingheading{
+    font-size: 35px;
+    font-weight: bolder;
+    padding-bottom: 0.5em;
+
+}
+.actualtrending{
+    background-color: white;
+    height:215px;
+    padding:0.8em;
+    border:solid;
+}
+
+.profile1, .profile2, .profile3, .profile4{
+    display:flex;
+    flex-direction:row;
+    padding:0.15em;
+
+}
+
+#avatar{
+    height: 50px;
+}
+
+#avatarwords{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 1em;
+    font-size: 15px;
+    color: darkslategrey;
+}
+
+#avatarid{
+    color:black;
+}
 
 img{
     height: 35px;
@@ -148,4 +262,8 @@ img{
    display: flex;
    justify-content: end;
    margin-top:10px;
+}
+
+#mainavatar{
+    height: 70px;
 }
